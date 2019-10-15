@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="463.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <BorderPane>
+      <top>
+        <MenuBar>
+          <menus>
+            <Menu text="Arquivo">
+              <items>
+                <MenuItem text="Close" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+      <bottom>
+        <HBox alignment="TOP_RIGHT" prefHeight="24.0" prefWidth="463.0">
+          <children>
+            <Button text="Cancelar" />
+            <Button text="Salvar" />
+          </children>
+        </HBox>
+      </bottom>
+      <center>
+        <TextArea />
+      </center>
+    </BorderPane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Tela de Usuário</title>
+        <h:outputStylesheet name="css/estilo.css" />
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:inputHidden id="id" value="#{telaUsuario.user.id}" />
+            <h:outputLabel value="Email: " />
+            <h:inputText id="email" value="#{telaUsuario.user.email}" />
+            <br/><br/>
+            <h:outputLabel value="Senha:" />
+            <h:inputText  id="senha" value="#{telaUsuario.user.senha}" />
+            <br/><br/>
+            <h:commandButton value="Cadastrar" action="#{telaUsuario.cadastrar}" />
+            &nbsp;
+            <h:commandButton value="Alterar" action="#{telaUsuario.alterar}" />
+
+            <br/><br/>
+            <h:dataTable 
+                value="#{listaUsuarioBean.listaUsuario}" var="user" rendered="#{not empty listaUsuarioBean.listaUsuario}" >
+                <!--<h:column>
+                    <f:facet name="header">Id</f:facet>
+                    #{user.id}
+                </h:column>-->
+                <h:column>
+                    <f:facet name="header">Email</f:facet>
+                    #{user.email}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Senha</f:facet>
+                    #{user.senha}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Ação</f:facet>
+                    <h:commandLink value="Remover" 
+                        action="#{telaUsuario.remover(user)}" />
+                    &nbsp;
+                    <h:commandLink value="Alterar" 
+                        action="#{telaUsuario.carregarDados(user)}" />
+                </h:column>
+            </h:dataTable>
+        
+        </h:form>
+        
+
+
+        
+    </h:body>
+</html>
+

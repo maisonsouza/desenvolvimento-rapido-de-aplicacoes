@@ -1,0 +1,18 @@
+table{
+    width: 80%;
+    text-align: center;
+}
+
+th, tr, td{
+    border: 1px solid black;  
+    padding: 10px;
+}
+
+div.msgErro{
+    color:red;
+}
+
+.photo{
+    width: 1.5cm;
+    height: 2.0cm;
+}

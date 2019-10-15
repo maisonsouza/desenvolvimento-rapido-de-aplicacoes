@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToMany/TesteGenericDAO.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/cascade/Estado_Cascade.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/ManyToOne/Cliente.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToMany/Funcionario_ManyToOne.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/ManyToOne/TesteGenericDAO.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/objetosEmbutidos/Endereco.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/cascade/Governador_Cascade.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/bidirecional/Estado_Bidirecional.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/bidirecional/TesteGenericDAO.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/objetosEmbutidos/TesteGenericDAO.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/ManyToMany/Livro.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/bidirecional/Governador_Bidirecional.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/objetosEmbutidos/Pessoa_ObjetoEmbutido.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/Estado.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/ManyToMany/Autor.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToMany/Departamento.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/OneToOne/cascade/TesteGenericDAO.java</file>
+            <file>file:/C:/Users/maiso/Google%20Drive/Educação/Graduação/Ifam/TADS/4º%20Período/Desenvolvimento%20Rápido%20de%20Aplicações/Códigos/codigosDeExemplo-master/DRA_JPA_HIBERNATE/src/dra_jpa_hibernate/relacionamento/ManyToOne/Pedido.java</file>
+        </group>
+    </open-files>
+</project-private>

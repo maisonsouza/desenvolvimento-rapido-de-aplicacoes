@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Componentes Visuais</title>
+        <h:outputStylesheet name="css/estilos.css" />
+    </h:head>
+
+    <h:body>
+        
+           <p>**  <strong> h:inputText </strong> </p>
+           <h:form>
+            <h:outputLabel value="Nome: " for="nome" />
+            <h:inputText id="nome" />
+           </h:form>
+           <br/><br/>
+           
+           <p>**  <strong>h:selectBooleanCheckbox</strong> </p>
+           <h:form>
+            <h:outputLabel value="Ex-Aluno: " for="exAluno" />
+            <h:selectBooleanCheckbox value="#{componentesBean.exAluno}" id="exAluno" />
+           </h:form>
+           <br/><br/>
+           
+           <p>**  <strong>h:selectManyCheckbox</strong> - Conteúdo Estático</p>
+           <h:form>
+           <h:outputLabel value="Cursos: " for="cursosE" />
+           <h:selectManyCheckbox value="#{componentesBean.cursosEscolhidos}" id="cursosE" >
+               <f:selectItem itemValue ="C1" itemLabel="POO - Estático" />
+               <f:selectItem itemValue ="C2" itemLabel="DRA - Estático" />
+           </h:selectManyCheckbox>
+           </h:form>
+           <br/><br/>
+           
+           <p>**  <strong>h:selectOneRadio</strong> - Conteúdo Estático</p>
+           <h:form>
+           <h:outputLabel value="Gênero " for="genero" />
+           <h:selectOneRadio value="#{componentesBean.genero}" id="genero" >
+               <f:selectItem itemValue ="F" itemLabel="Feminino" />
+               <f:selectItem itemValue ="M" itemLabel="Masculino" />
+           </h:selectOneRadio>
+           </h:form>
+           <br/><br/>
+           
+           <p>**  <strong>h:selectManyCheckbox</strong> - Conteúdo Dinâmico</p>
+           <h:form>
+           <h:outputLabel value="Cursos: " for="cursosD" />
+           <h:selectManyCheckbox 
+               value="#{componentesBean.cursosEscolhidos}" id="cursosD" >
+               <f:selectItems value="#{componentesBean.cursos}" 
+                    var="curso" itemValue="#{curso.codigo}" itemLabel="#{curso.nome}"/>
+           </h:selectManyCheckbox>
+           </h:form>
+           <br/><br/>
+           
+           <p>**  <strong>h:selectOneMenu</strong> - Conteúdo Dinâmico</p>
+           <h:form>
+           <h:outputLabel value="Cursos: " for="cursosSOM" />
+           <h:selectOneMenu
+               value="#{componentesBean.cursosEscolhidos}" id="cursosSOM" >
+               <f:selectItems value="#{componentesBean.cursos}" 
+                    var="curso" itemValue="#{curso.codigo}" itemLabel="#{curso.nome}"/>
+           </h:selectOneMenu>
+           </h:form>
+           
+           <br/><br/>
+           
+           <p>**  <strong>h:commandButton - action </strong> </p>
+           <h:form>
+           <h:commandButton value="Say Hello!!" action="#{componentesBean.sayHello}" />
+           &nbsp;
+           <h:outputText value="#{componentesBean.mensagem}" />   
+           </h:form>
+           
+           <br/><br/>
+           
+           <p>**  <strong>h:commandButton - actionListener </strong> </p>
+           <h:form>
+           <h:commandButton value="Não Clicado!!" actionListener="#{componentesBean.clique}" />
+           </h:form>
+           <br/><br/>
+           
+           <p>**  <strong>h:link</strong> </p>
+           <h:form>
+           <h:link value="Página de Index" outcome="index" />
+           </h:form>
+           
+           <br/><br/>
+           
+           <p>**  <strong>h:outputLink</strong> </p>
+           <h:form>
+           <h:outputLink  value="http://www.ifam.edu.br">
+               Página do IFAM 
+           </h:outputLink>
+           </h:form>
+           
+           <br/><br/>
+           
+           <p>**  <strong>h:graphicImage</strong> </p>
+           <h:form>
+               <h:graphicImage value="img/download.png" width="50px" height="50px"  />
+           </h:form>
+           
+           <br/><br/>
+           
+           <p>**  <strong>h:panelGrid e h:panelGroup </strong> </p>
+           <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Nome do curso:" for="nome"/>
+                    <h:inputText id="nome"/>
+
+                    <h:outputLabel value ="Descrição:" for="descricao"/>
+                    <h:inputTextarea id="descricao"/>
+
+                    <h:panelGroup >
+                        <h:outputLabel value="Carga horária : " for ="carga-horaria"/>
+                        <h:graphicImage value="img/download.png" width="25px" height="25px" />
+                    </h:panelGroup >
+                    <h:inputText id="carga-horaria"/>
+
+                    <h:commandButton value="Cadastrar"/>
+                </h:panelGrid >
+            </h:form>
+           
+           <br/><br/>
+           
+           <p>**  <strong>h:dataTable</strong> </p>
+           <h:form>
+                <h:dataTable value="#{componentesBean.cursos}" var="curso" styleClass="tabela">
+                 <h:column>
+                        <f:facet name="header">Código </f:facet> #{curso.codigo}
+                 </h:column>
+                 <h:column>
+                        <f:facet name="header">Nome </f:facet> #{curso.nome}
+                 </h:column>
+                 <h:column>
+                        <f:facet name="header">Adicionar turma </f:facet>
+                        <h:commandLink value=" Adicionar turma " action="#{componentesBean.adicionarTurma(curso)}" />
+                 </h:column >
+                </h:dataTable>           
+           </h:form>
+           
+           
+           
+           
+           
+          
+    </h:body>
+</html>
+
